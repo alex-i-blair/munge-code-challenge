@@ -113,7 +113,7 @@ test('should return a shouting array', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('should return a proper array of strings', (expect) => { 
+skip('should return a proper array of strings', (expect) => { 
     const expected = ['scooterdog', 'sassydog', 'legzofrog', 'fluffsquirrel'];
     const actual = makeStringArray(otherPets);
 
