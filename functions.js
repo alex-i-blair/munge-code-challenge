@@ -131,8 +131,12 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return arr
-        .map(pet => pet.name);
+    arr.map(pet => {
+        return [
+            ['name', pet.name],
+            ['type', pet.type]
+        ];
+    });
 }
 /*
 Output:
